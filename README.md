@@ -1,4 +1,4 @@
-# Databricks and Cloud Proficiency Showcase 🌩️
+# Databricks and Cloud Proficiency Showcase ☁️
 
 Welcome to my Databricks and Cloud Proficiency Showcase! This repository highlights my expertise in Databricks, Azure Data Factory, KeyVault, ADLS GEN2, and Synapse. Dive into my comprehensive knowledge of these tools and explore my work in creating robust data pipelines, managing data with the Medallion architecture, and leveraging Databricks features for advanced data engineering tasks.
 
