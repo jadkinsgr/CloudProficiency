@@ -10,7 +10,7 @@ Welcome to my Databricks and Cloud Proficiency Showcase! This repository highlig
 4. [Azure Data Lake Storage Gen2](#azure-data-lake-storage-gen2)
 5. [Azure Synapse](#azure-synapse)
 6. [Databricks](#databricks)
-   1. [Databricks Features](#databricks-features)
+   - [Databricks Features](#databricks-features)
       - [Delta Live Tables (DLT)](#delta-live-tables-dlt)
       - [Change Data Capture (CDC)](#change-data-capture-cdc)
       - [Medallion Architecture](#medallion-architecture)
