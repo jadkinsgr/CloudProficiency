@@ -74,4 +74,21 @@ You may reference this script in our [repo](https://dev.azure.com/tegria-techni
 
 ## **Extras!**
 
-1. [EngineLoop](https://www.loom.com/share/c704db3fa16244409506b54bba5cecb6?sid=9af423c9-b83d-4d07-825a-93476c26f64a) - Ever needed to process a large amount of files into various tables with minimal coding - check out this engine loop video which will explore our options. This notebook can be found and imported from our [repo.](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/UnityCatalog/Looping%20Example.dbc&version=GBmain)
+1. [**EngineLoop**](https://www.loom.com/share/c704db3fa16244409506b54bba5cecb6?sid=9af423c9-b83d-4d07-825a-93476c26f64a) - Ever needed to process a large amount of files into various tables with minimal coding - check out this engine loop video which will explore our options. This notebook can be found and imported from our [repo.](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/UnityCatalog/Looping%20Example.dbc&version=GBmain)
+
+2. [**Full Pipeline Tutorial**](https://www.loom.com/share/2b1d8f36cfc44307ab132c57944304f3)
+    1. Creating a bronze table
+    2. Creating a silver prep (data quality enforcement step)
+    3. Creating a silver type 1 SCD table
+    4. Creating a silver type 2 SCD table
+    5. Creating a final gold level reporting table
+    6. Creating the Pipeline - wrapping steps 1-5 together
+    
+    Example scenarios I have prepared that you will most likely encounter:
+    
+    1. Loading the initial set of values
+    2. Adding new values, but not the ones from step 1.
+    3. Correcting a value from step 2
+    4. Running the pipeline with “bad” data - quality check enforcement
+    5. Illustrating schema drift
+    6. Illustrating what happens when we receive unexpected value (for example a string, when we expect a integer)
