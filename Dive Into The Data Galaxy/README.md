@@ -36,21 +36,21 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 1. [**Cluster Creation Video:**](https://www.loom.com/share/81b5029002a24f38a1163bee9979f7d9) Join the guide to create your first cluster on Databricks.
 2. [**Table Creation Video:](https://www.loom.com/share/f3efcbe9174144c189a6bbbf2bdd3882?sid=381ce194-ca44-4453-beb2-3ee03640044e)  Create a fake source file for us to create our pipeline.
-You may reference this script in our [repo](https://dev.azure.com/tegria-technical-services/AnalyticsDojo/_git/AnalyticsDojo?version=GBmain&path=/DatabricksTrainingMaterials/SourceTableCreation.py)**
+
 
 ## **Hive MetaStore (Legacy) - Option 1:**
 
 1. [**Create your Bronze Table:**](https://www.loom.com/share/1e1027e2c983402c801cea5d52cca01f?sid=63964baa-775f-4b1e-9e66-84f0dff9d44e) Create your starter table that contains everything
     
-    You may reference this script in our [repo](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/HiveMetaStore/BronzeTable.sql)
+
     
 2. [**Create your Silver Table:**](https://www.loom.com/share/26913daf73cd4cf19e511f05c4746c34?sid=70046655-2607-481f-8f44-1dea0e10b540) : Create your table that possibly has some data type changes, column generation and constraints.
     
-    You may reference this script in our [repo](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/HiveMetaStore/SilverTable.sql)
+ 
     
 3. [**Create your Gold Table:**](https://www.loom.com/share/12faed2c0e9241f18ed4dad811716dd0?sid=d3476169-d2da-4499-8001-f4ab7aed5bdf) Create your reporting table - this is what data scientists, business intelligence analysts would use.
     
-    You may reference this script in our [repo](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/HiveMetaStore/GoldTable.sql)
+    
     
 4. [**Create your Delta Lake Pipeline:**](https://www.loom.com/share/7c48139e6fe447bca9d7b58f708e1807?sid=e06f9b54-48dc-4933-90be-3402aac1960b) This runs the data through the pipeline from source, to bronze, to silver and to gold.
 5. [**View your data created in step 6 (Create your Delta Lake Pipeline):**](https://www.loom.com/share/aea6db61df404af3b909b156f9ee9789?sid=076fccab-1532-417d-8531-a27eb605cd00) Take a look and see the output of all your hard work by browsing the bronze, silver and gold layer tables.
@@ -67,14 +67,14 @@ You may reference this script in our [repo](https://dev.azure.com/tegria-techni
 5. [**Unity Catalog: DLT Pipeline Orchestration:**](https://www.loom.com/share/47dd8388203c4e389aa710e1aad66a06?sid=ce8dbeaf-7170-4d75-8867-8e13b32d8a7d) Understand DLT Pipeline Orchestration. Using our tables created in Steps 2-3.
 6. [**Unity Catalog - Python Variation:**](https://www.loom.com/share/b978a87e2783444da9e77d5155206974?sid=93cc4473-2133-423f-8229-c7ca0a964166) Explore the Python Variation of these steps within Unity Catalog.
     
-    This repository file contains the entire notebook - you may use it if you like, to do so import the notebook into your own databricks account: [repo](https://dev.azure.com/tegria-technical-services/AnalyticsDojo/_wiki/wikis/AnalyticsDojo.wiki/44/Dive-into-the-Databricks-Galaxy-Quick-Follow-Along-Options)
+
     
 
 ---
 
 ## **Extras!**
 
-1. [**EngineLoop**](https://www.loom.com/share/c704db3fa16244409506b54bba5cecb6?sid=9af423c9-b83d-4d07-825a-93476c26f64a) - Ever needed to process a large amount of files into various tables with minimal coding - check out this engine loop video which will explore our options. This notebook can be found and imported from our [repo.](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/UnityCatalog/Looping%20Example.dbc&version=GBmain)
+1. [**EngineLoop**](https://www.loom.com/share/c704db3fa16244409506b54bba5cecb6?sid=9af423c9-b83d-4d07-825a-93476c26f64a) - Ever needed to process a large amount of files into various tables with minimal coding - check out this engine loop video which will explore our options. 
 2. [**Full Pipeline Tutorial**](https://www.loom.com/share/2b1d8f36cfc44307ab132c57944304f3)
     1. Creating a bronze table
     2. Creating a silver prep (data quality enforcement step)
@@ -92,7 +92,7 @@ You may reference this script in our [repo](https://dev.azure.com/tegria-techni
     5. Illustrating schema drift
     6. Illustrating what happens when we receive unexpected value (for example a string, when we expect a integer)
     
-    This notebook can be found in the shared under tutorials in our [repo](https://dev.azure.com/tegria-technical-services/_git/AnalyticsDojo?path=/DatabricksTrainingMaterials/UnityCatalog/FullDeveloperPipeline_Python%20(SCD%20Type%201%20and%202).dbc&version=GBmain).
+   path=/DatabricksTrainingMaterials/UnityCatalog/FullDeveloperPipeline_Python%20(SCD%20Type%201%20and%202).dbc&version=GBmain).
     
 3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/98992b960f924b918033dfcb2a3452c1?sid=f4307f58-ee75-4883-9bfe-05c87c7a41ed) 🗝️
     
