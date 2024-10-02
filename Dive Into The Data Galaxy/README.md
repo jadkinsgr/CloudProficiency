@@ -35,7 +35,7 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 ## **Setup Videos:**
 
 1. [**Cluster Creation Video:**](https://www.loom.com/share/81b5029002a24f38a1163bee9979f7d9) Join the guide to create your first cluster on Databricks.
-2. [**Table Creation Video:](https://www.loom.com/share/f3efcbe9174144c189a6bbbf2bdd3882?sid=381ce194-ca44-4453-beb2-3ee03640044e)  Create a fake source file for us to create our pipeline.
+2. [**Table Creation Video:**](https://www.loom.com/share/f3efcbe9174144c189a6bbbf2bdd3882?sid=381ce194-ca44-4453-beb2-3ee03640044e)  Create a fake source file for us to create our pipeline.
 
 
 ## **Hive MetaStore (Legacy) - Option 1:**
@@ -92,7 +92,6 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
     5. Illustrating schema drift
     6. Illustrating what happens when we receive unexpected value (for example a string, when we expect a integer)
     
-   path=/DatabricksTrainingMaterials/UnityCatalog/FullDeveloperPipeline_Python%20(SCD%20Type%201%20and%202).dbc&version=GBmain).
     
 3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/98992b960f924b918033dfcb2a3452c1?sid=f4307f58-ee75-4883-9bfe-05c87c7a41ed) 🗝️
     
