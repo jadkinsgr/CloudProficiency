@@ -94,5 +94,10 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
     
     
 3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/98992b960f924b918033dfcb2a3452c1?sid=f4307f58-ee75-4883-9bfe-05c87c7a41ed) 🗝️
+
+4. **[Leveraging a Databricks notebook to connect directly to a API Endpoint](https://www.loom.com/share/39f437c70f244234838652d0e34752a7?sid=7cda4501-ae02-447a-a010-06760d2d1297) 💽**
+    
+    Bypass the need to retrieve data from Azure Data Factory or AWS Glue and connect directly from databricks!
+
     
     Create your Key Vault secret, set up a Databricks secret scope using Key Vault properties, and then pull everything together by assigning the secret to a variable.
