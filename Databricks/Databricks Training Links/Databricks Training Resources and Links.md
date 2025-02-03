@@ -55,8 +55,3 @@ Welcome to the Databricks training resources and links repository! Below you'l
 
 
 
-
-
-
-
-
