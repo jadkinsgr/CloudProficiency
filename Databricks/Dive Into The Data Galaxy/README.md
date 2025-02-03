@@ -61,15 +61,10 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
     
     This repository file contains the entire notebook - you may use it if you like, to do so import the notebook into your own databricks account: [repo](https://dev.azure.com/tegria-technical-services/AnalyticsDojo/_wiki/wikis/AnalyticsDojo.wiki/44/Dive-into-the-Databricks-Galaxy-Quick-Follow-Along-Options)
     
-2. [**Unity Catalog - Bronze Table:**](https://www.loom.com/share/b572f22d58624c39b6835baa5a703e57?sid=1f34250f-5dbd-412d-af2a-b2f1a8ae6d79) Learn about creating the Bronze Table in Spark SQL.
-3. [**Unity Catalog - Silver Table:**](https://www.loom.com/share/8d1e7158677a4522b214bfba4d37eaf0?sid=12eac752-4bed-4f8f-85d7-591439187339) Learn about creating the Silver Table in Spark SQL.
-4. [**Unity Catalog - Gold Table:**](https://www.loom.com/share/021bbae9cafd4547aa5954373c1753af?sid=49ab2c7d-6828-4773-af5d-38402bd49083) Learn about creating the Gold Table in Spark SQL.
-5. [**Unity Catalog: DLT Pipeline Orchestration:**](https://www.loom.com/share/47dd8388203c4e389aa710e1aad66a06?sid=ce8dbeaf-7170-4d75-8867-8e13b32d8a7d) Understand DLT Pipeline Orchestration. Using our tables created in Steps 2-3.
-6. [**Unity Catalog - Python Variation:**](https://www.loom.com/share/b978a87e2783444da9e77d5155206974?sid=93cc4473-2133-423f-8229-c7ca0a964166) Explore the Python Variation of these steps within Unity Catalog.
-    
-
-    
-
+2. [**Unity Catalog - Bronze Table:**](https://www.loom.com/share/b572f22d58624c39b6835baa5a703e57?sid=1f34250f-5dbd-412d-af2a-b2f1a8ae6d79) Learn about creating the Bronze Table in Python.
+3. [**Unity Catalog - Silver Table:**](https://www.loom.com/share/8d1e7158677a4522b214bfba4d37eaf0?sid=12eac752-4bed-4f8f-85d7-591439187339) Learn about creating the Silver Table in Python.
+4. [**Unity Catalog - Gold Table:**](https://www.loom.com/share/021bbae9cafd4547aa5954373c1753af?sid=49ab2c7d-6828-4773-af5d-38402bd49083) Learn about creating the Gold Table in Python.
+5. [**Unity Catalog: DLT Pipeline Orchestration:**](https://www.loom.com/share/47dd8388203c4e389aa710e1aad66a06?sid=ce8dbeaf-7170-4d75-8867-8e13b32d8a7d) Understand DLT Pipeline Orchestration. Using our tables created in the prior steps.
 ---
 
 ## **Extras!**
