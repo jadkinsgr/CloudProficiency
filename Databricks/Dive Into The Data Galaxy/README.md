@@ -33,26 +33,27 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 1. [**Cluster Creation Video:**](https://www.loom.com/share/f06ece936b1741c5944d0de7408d7c1f?sid=137520f6-ac81-47d5-ad32-4928005fb6b9) Join the guide to create your first cluster on Databricks.
 
-2. [**Table Creation Video:**](https://www.loom.com/share/b38b2c75f3ff4880a4297a49b6e029bb)  Create a fake source file for us to create our pipeline.
+2. [**Table Creation Video:**](https://www.loom.com/share/b38b2c75f3ff4880a4297a49b6e029bb)  Create a fake source file for us to create our pipeline. - [**Synthea Patient File**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SyntheaFiles/patients.csv)
+
 
 
 ## **Hive MetaStore (Legacy) - Option 1:**
+### Source Creation Files can be found here:
+[**Synthea Patient Files**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SyntheaFiles/patients.csv)
+
+[**Notebook - Hive Metastore**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Hive%20Metastore%20Tutorial/PatientTutorial.sql)
 
 1. [**Create your Bronze Table:**](https://www.loom.com/share/8017eb20012e4078a31bea115033c98c) Create your starter table that contains everything
-    
-
-    
-2. [**Create your Silver Table:**](https://www.loom.com/share/539b3ae60cc3426cb31b0eba14f289c7?sid=cb55687d-3cd1-46cc-8998-c4020f159c63) : Create your table that possibly has some data type changes, column generation and constraints.
-    
-3. [**Create your Error Logging Table:**](https://www.loom.com/share/40dbde43d2b9478aa199d3ff69f4f5e5?sid=61792ded-4749-44db-9662-f956cea67cb0): At the silver level we had a constraint that would catch data quality issues and drop the row. In this example we are collecting those issues in one location for easy UAT or quality review.
-    
-    
+2. [**Create your Silver Table:**](https://www.loom.com/share/539b3ae60cc3426cb31b0eba14f289c7?sid=cb55687d-3cd1-46cc-8998-c4020f159c63) : Create your table that possibly has some data type changes, column generation and constraints. 
+3. [**Create your Error Logging Table:**](https://www.loom.com/share/40dbde43d2b9478aa199d3ff69f4f5e5?sid=61792ded-4749-44db-9662-f956cea67cb0): At the silver level we had a constraint that would catch data quality issues and drop the row. In this example we are collecting those issues in one location for easy UAT or quality review.  
 4. [**Create your Gold Table:**](https://www.loom.com/share/dbffb0b1badb4138aeeacd9277603c5e?sid=50f4c758-c826-46e2-81fd-49ca700af80b) Create your reporting table - this is what data scientists, business intelligence analysts would use.
-
 5. [**Create your Delta Live Pipeline:**](https://www.loom.com/share/9e2fad182df44f6caeef9c79e0f0377c?sid=c6cc3d40-e2e3-4b89-933d-3a3742504a82) This runs the data through the pipeline from source, to bronze, to silver and to gold.
 
 
 ## **Unity Catalog (future)- Option 2:**
+[**Synthea Encounter Files**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SyntheaFiles/encounters.csv)
+
+[**Notebook - Unity Catalog**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Unity%20Catalog%20Tutorial/EncountersPipeline_Python.py)
 
 1. [**Unity Catalog Overview:**](https://www.loom.com/share/b0f1c5b4782d4db08de41fb453ae0a95?sid=9c223c8e-49aa-49a2-869c-eead90e02876) Get an overview of Unity Catalog.
 2. [**Unity Catalog - Bronze Table:**](https://www.loom.com/share/4d9f1fadb29946068e909431369f0eec?sid=e914209f-52fa-47d2-b15c-1ac998a90449) Learn about creating the Bronze Table in Python.
@@ -64,9 +65,14 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 ## **Extras!**  
 
-1. [**EngineLoop**](https://www.loom.com/share/0f154ad256f34b709646ef52e6ef1a71?sid=3251a2d6-c33d-41c6-9258-f8c013f67cc1) – Ever needed to process a large amount of files into various tables with minimal coding? Check out this Engine Loop video, which explores our options.  
+1. [**EngineLoop**](https://www.loom.com/share/0f154ad256f34b709646ef52e6ef1a71?sid=3251a2d6-c33d-41c6-9258-f8c013f67cc1) – Ever needed to process a large amount of files into various tables with minimal coding? Check out this Engine Loop video, which explores our options. 
+    
+    [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Loop%20Engine%20Tutorial/Looping%20Example.py)  
 
-2. **Full Pipeline Tutorial**:
+2. **Full Pipeline Tutorial**: 
+    
+    [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Full%20Pipeline%20Tutorial/FullDeveloperPipeline_Python%20(SCD%20Type%201%20and%202).py)  
+
 
     **Pipeline Steps:**  
     - **1.** Creating a bronze table  
@@ -89,10 +95,14 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
     - [**Part 2 - Running through each scenario in the pipeline**](https://www.loom.com/share/82ff5b64c3c548c4bae2b992bf58f546?sid=2bd0829c-3411-468c-a8db-f527e1b679e5)  
     - [**Part 3 - Review and Recap, lets review the data**](https://www.loom.com/share/d8107c3c38814a45975b97d14a43e880?sid=d5971d38-8fa4-4149-8c34-92f5438fb0eb)  
 
-3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/f4cd82e3530c4b56927b253d05bbffc2?sid=275380ab-02c8-45c1-b26c-f8f43d016586) 🗝️  
+3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/f4cd82e3530c4b56927b253d05bbffc2?sid=275380ab-02c8-45c1-b26c-f8f43d016586): 
+
+    [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/API%20Tutorial/Creating%20and%20Connecting%20to%20vs%20APIs%20in%20KeyVault.ipynb)  🗝️  
 
 4. **[Leveraging a Databricks Notebook to Connect Directly to an API Endpoint](https://www.loom.com/share/22b0f5eaf8874d3ba59833369d139188?sid=390a2479-0f49-450d-8635-ede0bb44154a) 💽**  
 
+    [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/API%20Tutorial/API%20Call.py)
+    
     Bypass the need to retrieve data from Azure Data Factory or AWS Glue—connect directly from Databricks!  
 
     - Create your Key Vault secret  
