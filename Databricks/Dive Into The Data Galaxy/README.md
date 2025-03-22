@@ -23,7 +23,7 @@ These quick lessons are designed for speed - breaking up the individual tasks in
 
 Also keep in mind - this is an illustration on the Hive Metastore - not Unity Catalog (UC). UC as of 1/1/2024 - is still in private preview. However as of this moment one notebook = one catalog. If Bronze, Silver, Gold is in different catalogs you cannot use one notebook to publish to all three. However, the workaround to this is to place the medallion architecture at the table level which is recommended by Databricks. A example is placed below in Extras.
 
-[**Welcome Start Here:**](https://www.loom.com/share/cdcbe440ceae472f9e2ff4424626561c) There are two training pathways - both are valuable but you can chose which to follow or do both.
+[**Welcome Start Here:**](https://youtu.be/rRABFbz8wbw) There are two training pathways - both are valuable but you can chose which to follow or do both.
 
 **Option 1**: Hive Metastore (Legacy) - This creates bronze/silver/gold tables assuming no schema inference and shows you how to convert datatypes in the pipeline.
 
@@ -31,9 +31,9 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 ## **Setup Videos:**
 
-1. [**Cluster Creation Video:**](https://www.loom.com/share/f06ece936b1741c5944d0de7408d7c1f?sid=137520f6-ac81-47d5-ad32-4928005fb6b9) Join the guide to create your first cluster on Databricks.
+1. [**Cluster/Compute Creation Video:**](https://youtu.be/Uz3z9bT73iI) Join the guide to create your first cluster on Databricks.
 
-2. [**Table Creation Video:**](https://www.loom.com/share/b38b2c75f3ff4880a4297a49b6e029bb)  Create a fake source file for us to create our pipeline. - [**Synthea Patient File**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SyntheaFiles/patients.csv)
+2. [**Table Creation Video:**](https://youtu.be/3As9Zdi09gU)  Create a fake source file for us to create our pipeline. - [**Synthea Patient File**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SyntheaFiles/patients.csv)
 
 
 
@@ -43,11 +43,11 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 [**Notebook - Hive Metastore**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Hive%20Metastore%20Tutorial/PatientTutorial.sql)
 
-1. [**Create your Bronze Table:**](https://www.loom.com/share/8017eb20012e4078a31bea115033c98c) Create your starter table that contains everything
-2. [**Create your Silver Table:**](https://www.loom.com/share/539b3ae60cc3426cb31b0eba14f289c7?sid=cb55687d-3cd1-46cc-8998-c4020f159c63) : Create your table that possibly has some data type changes, column generation and constraints. 
-3. [**Create your Error Logging Table:**](https://www.loom.com/share/40dbde43d2b9478aa199d3ff69f4f5e5?sid=61792ded-4749-44db-9662-f956cea67cb0): At the silver level we had a constraint that would catch data quality issues and drop the row. In this example we are collecting those issues in one location for easy UAT or quality review.  
-4. [**Create your Gold Table:**](https://www.loom.com/share/dbffb0b1badb4138aeeacd9277603c5e?sid=50f4c758-c826-46e2-81fd-49ca700af80b) Create your reporting table - this is what data scientists, business intelligence analysts would use.
-5. [**Create your Delta Live Pipeline:**](https://www.loom.com/share/9e2fad182df44f6caeef9c79e0f0377c?sid=c6cc3d40-e2e3-4b89-933d-3a3742504a82) This runs the data through the pipeline from source, to bronze, to silver and to gold.
+1. [**Create your Bronze Table:**](https://youtu.be/TvWr-3RIons) Create your starter table that contains everything
+2. [**Create your Silver Table:**](https://youtu.be/fXZzzZLe4Lk) : Create your table that possibly has some data type changes, column generation and constraints. 
+3. [**Create your Error Logging Table:**](https://youtu.be/fiOnB1nBJnk): At the silver level we had a constraint that would catch data quality issues and drop the row. In this example we are collecting those issues in one location for easy UAT or quality review.  
+4. [**Create your Gold Table:**](https://youtu.be/PmxK9MF5wq0) Create your reporting table - this is what data scientists, business intelligence analysts would use.
+5. [**Create your Delta Live Pipeline:**](https://youtu.be/lBriuE3urhE) This runs the data through the pipeline from source, to bronze, to silver and to gold.
 
 
 ## **Unity Catalog (future)- Option 2:**
@@ -55,17 +55,17 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
 [**Notebook - Unity Catalog**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Unity%20Catalog%20Tutorial/EncountersPipeline_Python.py)
 
-1. [**Unity Catalog Overview:**](https://www.loom.com/share/b0f1c5b4782d4db08de41fb453ae0a95?sid=9c223c8e-49aa-49a2-869c-eead90e02876) Get an overview of Unity Catalog.
-2. [**Unity Catalog - Bronze Table:**](https://www.loom.com/share/4d9f1fadb29946068e909431369f0eec?sid=e914209f-52fa-47d2-b15c-1ac998a90449) Learn about creating the Bronze Table in Python.
-3. [**Unity Catalog - Silver Table:**](https://www.loom.com/share/3d18375f7d9a4794aea852f321f53e05?sid=31a17223-f5b3-4410-b1e4-540c30ecd35a) Learn about creating the Silver Table in Python.
-4. [**Unity Catalog - Gold Table:**](https://www.loom.com/share/8316ffc602664678aab20cddc5aa2922?sid=1495b19d-8999-46da-98f6-3002fa683063) Learn about creating the Gold Table in Python.
-5. [**Unity Catalog: DLT Pipeline Orchestration:**](https://www.loom.com/share/a3b3c5c0b53143699a8a2a432f6d856b?sid=460329ff-4329-4a03-9526-3c96dc67d845) Understand DLT Pipeline Orchestration. Using our tables created in the prior steps.
-6. [**Unity Catalog: Viewing our date output:**](https://www.loom.com/share/7cacc898a3494ce085e7b47fe9d1dc70?sid=037b62e4-f6b3-41de-9113-1fee2632e465) We built our date, we build our pipeline - now lets take a look at its output.
+1. [**Unity Catalog Overview:**](https://youtu.be/1IGMwHfzrh4) Get an overview of Unity Catalog.
+2. [**Unity Catalog - Bronze Table:**](https://youtu.be/m_b8DKHTZUM) Learn about creating the Bronze Table in Python.
+3. [**Unity Catalog - Silver Table:**](https://youtu.be/Giyyih8FPNE) Learn about creating the Silver Table in Python.
+4. [**Unity Catalog - Gold Table:**](https://youtu.be/NF5V4enM370) Learn about creating the Gold Table in Python.
+5. [**Unity Catalog: DLT Pipeline Orchestration:**](https://youtu.be/iF2MCuJ19wY) Understand DLT Pipeline Orchestration. Using our tables created in the prior steps.
+6. [**Unity Catalog: Viewing our date output:**](https://youtu.be/d7SgtCbRLYg) We built our date, we build our pipeline - now lets take a look at its output.
 
 
 ## **Extras!**  
 
-1. [**EngineLoop**](https://www.loom.com/share/0f154ad256f34b709646ef52e6ef1a71?sid=3251a2d6-c33d-41c6-9258-f8c013f67cc1) – Ever needed to process a large amount of files into various tables with minimal coding? Check out this Engine Loop video, which explores our options. 
+1. [**EngineLoop**](https://youtu.be/mO3HOkuvVgs) – Ever needed to process a large amount of files into various tables with minimal coding? Check out this Engine Loop video, which explores our options. 
     
     [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/Loop%20Engine%20Tutorial/Looping%20Example.py)  
 
@@ -91,15 +91,15 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
     - Handling unexpected values (e.g., a string when an integer is expected)  
 
     **Full Pipeline Example – Bronze to Gold:**  
-    - [**Part 1 - High level overview of everything including the notebook, workflow, and cloud storage items**](https://www.loom.com/share/33f66f16b5de4bf485b82bdd6d316c38)  
-    - [**Part 2 - Running through each scenario in the pipeline**](https://www.loom.com/share/82ff5b64c3c548c4bae2b992bf58f546?sid=2bd0829c-3411-468c-a8db-f527e1b679e5)  
-    - [**Part 3 - Review and Recap, lets review the data**](https://www.loom.com/share/d8107c3c38814a45975b97d14a43e880?sid=d5971d38-8fa4-4149-8c34-92f5438fb0eb)  
+    - [**Part 1 - High level overview of everything including the notebook, workflow, and cloud storage items**](https://youtu.be/qJu3DDnJUQE)  
+    - [**Part 2 - Running through each scenario in the pipeline**](https://youtu.be/sZ8y1JKQmYI)  
+    - [**Part 3 - Review and Recap, lets review the data**](https://youtu.be/0yxXuggG9hk)  
 
-3. [**Incorporating Secrets from Key Vault to Databricks**](https://www.loom.com/share/f4cd82e3530c4b56927b253d05bbffc2?sid=275380ab-02c8-45c1-b26c-f8f43d016586): 
+3. [**Incorporating Secrets from Key Vault to Databricks**](https://youtu.be/au6baQbMSh4): 
 
     [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/API%20Tutorial/Creating%20and%20Connecting%20to%20vs%20APIs%20in%20KeyVault.ipynb)  🗝️  
 
-4. **[Leveraging a Databricks Notebook to Connect Directly to an API Endpoint](https://www.loom.com/share/22b0f5eaf8874d3ba59833369d139188?sid=390a2479-0f49-450d-8635-ede0bb44154a) 💽**  
+4. **[Leveraging a Databricks Notebook to Connect Directly to an API Endpoint](https://youtu.be/kKiCjv7b5_c) 💽**  
 
     [**Notebook Link**](https://github.com/jadkinsgr/CloudProficiency/blob/main/Databricks/Dive%20Into%20The%20Data%20Galaxy/SourceFiles/API%20Tutorial/API%20Call.py)
     
