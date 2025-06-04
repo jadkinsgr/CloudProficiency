@@ -92,7 +92,7 @@ Also keep in mind - this is an illustration on the Hive Metastore - not Unity Ca
 
     **Full Pipeline Example – Bronze to Gold:**  
     - [**Part 1 - High level overview of everything including the notebook, workflow, and cloud storage items**](https://youtu.be/qJu3DDnJUQE)  
-    - [**Part 2 - Running through each scenario in the pipeline**](https://youtu.be/sZ8y1JKQmYI)  
+    - [**Part 2 - Running through each scenario in the pipeline**](https://youtu.be/pNFUYyKW8ts)  
     - [**Part 3 - Review and Recap, lets review the data**](https://youtu.be/0yxXuggG9hk)  
 
 3. [**Incorporating Secrets from Key Vault to Databricks**](https://youtu.be/au6baQbMSh4): 
